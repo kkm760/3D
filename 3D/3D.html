@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		ul,li{
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+		.box{
+			width:1300px;
+			height:1700px;
+			display:flex;
+			perspective:1200;
+			perspective-origin:50% -100%;
+		}
+		ul{
+			width:180px;
+			height:236px;
+			margin:auto;
+			position:relative;
+			transform-style:preserve-3d;
+			transition:20s linear;
+		}
+		li{
+			width:180px;
+			height:236px;
+			position:absolute;
+		}
+		li:nth-child(1){
+			left:0;
+			background:url(images/1.jpg) no-repeat;
+			transform:rotateX(-26deg) translateZ(-278px);
+		}
+		li:nth-child(2){
+			left:-90px;
+			background:url(images/2.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(29deg) translateZ(-252px) translateX(16px);
+		}
+		li:nth-child(3){
+			left:-180px;
+			background:url(images/3.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(74deg) translateZ(-160px) translateX(42px);
+		}
+		li:nth-child(4){
+			left:-180px;
+			background:url(images/4.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(108deg) translateZ(-167px) translateX(-65px);
+		}
+		li:nth-child(5){
+			left:-90px;
+			background:url(images/5.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(0deg) translateZ(278px) translateX(90px);
+		}
+		li:nth-child(6){
+			left:0;
+			background:url(images/6.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(-20deg) translateZ(297px) translateX(-100px);
+		}
+		li:nth-child(7){
+			left:90px;
+			background:url(images/7.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(20deg) translateZ(269px) translateX(16px);
+		}
+		li:nth-child(8){
+			left:180px;
+			background:url(images/8.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(-108deg) translateZ(-167px) translateX(65px);
+		}
+		li:nth-child(9){
+			left:180px;
+			background:url(images/9.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(-74deg) translateZ(-160px) translateX(-42px);
+		}
+		li:nth-child(10){
+			left:90px;
+			background:url(images/10.jpg) no-repeat;
+			transform:rotateX(-26deg) rotateY(-29deg) translateZ(-252px) translateX(-16px);
+		}
+		.box:hover ul{
+			transform: rotateY(2000deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
